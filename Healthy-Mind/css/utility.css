@@ -1,0 +1,59 @@
+/*  utility classes  */
+
+/*  hr using for line  */
+.hr-t {
+    border-top: #2a83d7 5px solid;
+}
+
+.hr-b {
+    border-bottom: #2a83d7 5px solid;
+}
+
+.hr-y {
+    border-bottom: #2a83d7 5px solid;
+    border-top: #2a83d7 5px solid;
+}
+
+/*  for text color  */
+.my-c {
+    color: #2a83d7;
+}
+
+/*  for background color  */
+.my-b-c {
+    padding: 8px 25px;
+    background-color: #2a83d7;
+    transition: 0.3s;
+    border: none;
+}
+
+.my-b-c:hover {
+    border: none;
+    background-color: #2a83d7;
+    box-shadow: #232323 3px 3px 8px;
+}
+
+/*  for image 100% width  */
+.img-100 {
+    width: 100%;
+}
+
+/*  for title color  */
+.span-title-c {
+    color: #2a83d7;
+}
+
+
+/* removing decoration from anchor tag  */
+.a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*  heding font  */
+.myh2 {
+    font-weight: 800;
+    font-size: 3rem;
+    color: #2a83d7;
+    text-shadow: #939393 3px 3px 6px;
+}
