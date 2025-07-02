@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* navbar start */
+.navbar {
+    padding: 0 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12%;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: black;
+    position: relative;
+    /* Added */
+}
+
+.nav-list li a:hover {
+    color: black;
+}
+
+.nav-list li a::before {
+    /* Added */
+    content: "";
+    background-color: black;
+    width: 0;
+    height: 3px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.4s ease;
+    /* Added */
+}
+
+.nav-list li a:hover::before {
+    width: 100%;
+}
+
+.nav-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rightNav {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.btn {
+    --color: #0071a9;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+    color: var(--color2);
+}
+
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+/* <--school hover--> */
+.bigest-con {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    /* z-index:999; */
+    /* border: 2px solid; */
+}
+
+#trans {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    z-index: 900;
+}
+
+.contanair-left {
+    background-color: #445781;
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #f7f6f6;
+    position: fixed;
+    left: -20%;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.contanair-left ul {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.contanair-left ul li {
+    margin: 1vw 0;
+}
+
+.contanair-left ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-right {
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #8197c6;
+    position: fixed;
+    right: -20%;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.hover-right h1 {
+    margin-left: 20px;
+    padding: 10px;
+    color: #f7f6f6;
+}
+
+.hover-right h3 {
+    margin-left: 20px;
+    padding: 10px;
+    color: #f7f6f6;
+}
+
+.hover-right button {
+    font-weight: 600;
+    padding: 1vw 4vw;
+    border-radius: 8px;
+    background-color: #f7f6f6;
+    font-size: large;
+    color: rgb(14, 15, 15);
+}
+
+.hover-right button:hover {
+    color: #f7f6f6;
+    font-weight: 600;
+}
+
+
+
+/* <--courses hover--> */
+.cours-1 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    position: fixed;
+    top: 120px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 70%;
+    height: 75vh;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    align-items: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    color: #1f2941;
+}
+
+.card:hover {
+    /* border: 1px solid black; */
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card img {
+    padding: 10px;
+    border-radius: 20px;
+    width: 80%;
+    height: 50vh;
+}
