@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ------------------------------------ here is background image > hero */
+.hero {
+    background-image: url("assets/images/hero/hero.jpg");
+    background-position: center center;
+    background-size: max(1200, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 647px;
+}
+
+/* ------------------------------------dark shade > hero */
+.hero .box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 647px;
+    background-color: black;
+    opacity: 0.60;
+}
+
+/* =====================================    navbar */
+.navbar {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 65px;
+}
+
+.navbar button:first-child {
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+}
+
+.navbar button:last-child {
+    padding: 7px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+    border: none;
+}
+
+.navbar button:last-child:hover {
+    background-color: rgb(205, 0, 0);
+
+}
+
+/* =====================================    text content in hero */
+.text-content-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 87%;
+    z-index: 10;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.text-content-hero span:first-child h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.text-content-hero span {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+/* ------------------------------------ form in hero */
+
+.text-content-hero form input {
+    padding-left: 20px;
+    margin-top: 15px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.235);
+    font-size: 1rem;
+    border-radius: 3px;
+    width: 300px;
+    line-height: 3rem;
+    color: white;
+}
+
+.text-content-hero form input::placeholder {
+    color: white;
+}
+
+.text-content-hero form button {
+    margin-top: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.text-content-hero form button:hover {
+    background-color: rgb(205, 0, 0);
+}
+
+/* =====================================   first section 1st */
+.first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-top: 10px solid #232323;
+    padding: 4rem;
+    color: white;
+    /* height: 550px; */
+}
+
+/* ---------------------------------- 1st div >  first section */
+
+.first-section .firstDiv {
+    padding: 20px;
+    margin-right: 100px;
+    font-size: 1.4rem;
+    /* border: 2px solid white; */
+
+}
+
+.first-section .firstDiv h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* ---------------------------------- 2nd div >  first section */
+.first-img {
+    height: 90%;
+    /* border: 1px solid white; */
+}
+
+.first-img img {
+    position: relative;
+    top: 0;
+    width: 35vw;
+    z-index: 10;
+}
+
+.first-img video {
+    position: relative;
+    top: -272px;
+    right: -55px;
+    width: 30vw;
+}
+
+/* =====================================   second section 2nd */
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    border-top: 10px solid #232323;
+    background-color: #000000;
+    color: white;
+    /* height: 550px; */
+}
+/* ----------------------------------  second section > 1st div*/
+.second-section .second-img img{
+    width: 40vw;
+
+}
+
+/* ----------------------------------  second section > 2nd div */
+.second-section .secondDiv {
+    font-size: 1.4rem;
+    padding: 70px;
+}
+.second-section .secondDiv h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+
+/* =====================================   third section 3rd */
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #232323;
+    background-color: #000000;
+    color: white;
+    padding: 4rem;
+    /* height: 550px; */
+}
+
+/* ----------------------------------  third section > 1st div */
+.third-section .thirdDiv {
+    font-size: 1.4rem;
+    padding: 70px;
+}
+.third-section .thirdDiv h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* ----------------------------------  third section > 2nd div*/
+.third-section .third-img img{
+    width: 40vw;
+}
+
+/* =================================== FAQ section */
+.faq{
+    width: 100%;
+    border-top: 10px solid #232323;
+    background-color: #000000;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+}
+.faq h2{
+    margin-bottom: 30px;
+    font-size:38px;
+    font-weight: 900;
+}
+
+.faqBox{
+    border: none;
+    background-color: #292929f0;
+    color: white;
+}
+.accordion-header .accordion-button{
+    background-color: #292929f0;
+    color: white;
+}
+
+/* .faqBox p{
+   font-size: 20px;
+} */
+
+/* =================================== Footer section */
+footer{
+    border-top: 10px solid #232323;
+    background-color: #000000;
+}

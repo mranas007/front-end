@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            width: 40%;
+            border-radius: 10px;
+            background-color: #713ABE;
+            box-shadow: #5B0888 10px 10px 25px 5px;
+            font-family: 'Bad Script', cursive;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 5px;
+        }
+
+        form input {
+            border: none;
+            margin: 20px 40px 0 40px;
+            padding: 10px 20px;
+            background-color: #E5CFF7;
+            border-radius: 10px;
+
+        }
+
+        #box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #box label {
+            margin: 20px 40px 0 40px;
+        }
+
+        #box div {
+            display: flex;
+        }
+
+        #second_box input {
+            margin: 25px 0px 0 0px;
+            transform: scale(2);
+        }
+
+        select {
+            margin: 20px 40px 20px 40px;
+            padding: 10px 20px;
+            background-color: #E5CFF7;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Enrollment</h1>
+        <input type="text" placeholder="Enter your Name">
+        <input type="text" placeholder="Enter your Father name">
+        <input type="number" placeholder="Enter your age">
+
+        <div id="box">
+            <label>Marriage :</label>
+            <div id="second_box">
+                <label for="Yes">Yes :</label>
+                <input type="radio" id="Yes" name="Marriage" value="Yes">
+                <label for="No">No :</label>
+                <input type="radio" id="No" name="Marriage" value="No">
+            </div>
+        </div>
+
+        <select name="" id="">
+            <option value="">Select your Gender</option>
+            <option value=""> Male</option>
+            <option value="">Female</option>
+        </select>
+
+    </form>
+</body>
+</html>

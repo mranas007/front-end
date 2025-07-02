@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Combo colors 
+lighter green background-color: #5AB937;
+darker green background-color: #225b0e; */
+
+/* ==================================== HEADER */
+
+/* ------------------------------navbar section */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #5AB937;
+}
+
+.navbar .navbar-brand {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    color: #FFFFFF;
+    margin: 0 5px;
+    transition:color 0.3s;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #225b0e;
+    border-bottom: 2px solid #225b0e;
+}
+
+/* ==================================== MAIN */
+
+/* ------------------------------first section > main */
+.first-section {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.left-content-fs p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.left-content-fs p:nth-child(1) {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #225b0e;
+    text-shadow: 0 0 10px #5AB937;
+}
+
+.left-content-fs button {
+    background-color: #5AB937;
+    transition: 0.5s;
+}
+
+.left-content-fs button:hover {
+    background-color: #225b0e;
+    box-shadow: 5px 5px 5px #5AB937;
+}
+
+.left-content-fs a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* ------------------------------right content > First Section > main */
+
+.right-content-fs {
+    /* border: 2px solid black; */
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.right-content-fs img {
+    width: 60%;
+}
+
+
+/* ------------------------------------Second section   */
+.second-section{
+    width: 100%;
+    height: 90vh;
+    border-top: #225b0e 5px solid;
+    display: grid;
+    place-items: center
+}
+.container-fliud .row{
+    width: 100%;
+}
+.container-fliud .row div{
+    margin: auto;
+}
+.card a{
+    text-decoration: none;
+    color: #5AB937;
+}
+.card .card-body p:first-child{
+    text-decoration: none;
+    color: #225b0e;
+}

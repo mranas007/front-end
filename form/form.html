@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 23px 295px;
+            padding: 0px 30px 20px 30px;
+            background-color: #9336B4;
+            border-radius: 10px;
+            box-shadow: #40128B 20px 20px 31px
+        }
+
+        .photo {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 100px;
+
+        }
+
+        h1 {
+            margin-top: 22px;
+            margin-left: -18px;
+            color: #3D0C11;
+            font-family: 'Croissant One', cursive;
+            font-family: 'Pacifico', cursive;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        input {
+            margin-bottom: 16px;
+            border: none;
+            background-color: #F9DEC9;
+            border-radius: 2px;
+            padding: 4px 0px;
+        }
+
+        #f-Name {
+            margin-right: 135px;
+
+        }
+
+        .f-lab {
+            margin-bottom: 5px;
+
+        }
+
+        .f-input {
+            display: flex;
+
+        }
+
+        #second_input {
+            margin-left: 24px;
+            /* justify-content: right;
+            gap: 1.5rem; */
+        }
+
+        #start_data {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #start_data label {
+            margin-bottom: 5px;
+        }
+
+        #submit {
+            background-color: #3D0C11;
+            color: #F9DEC9;
+            padding: 10px 0px;
+            border-radius: 5px;
+            transition: all 500ms ease-in-out
+        }
+
+        #submit:hover {
+            box-shadow: #F9DEC9 0px 0px 15px 5px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="photo">
+            <img src="logo.png" alt="Image Description">
+            <h1>
+                NAS
+            </h1>
+        </div>
+
+        <div>
+            <div class="f-lab">
+                <label id="f-Name">First Name*</label>
+                <label>Last Name*</label>
+            </div>
+
+            <div class="f-input">
+                <input type="text">
+                <input type="text" id="second_input">
+            </div>
+        </div>
+
+        <label>Email Address*</label>
+        <input type="email" required>
+        <label>Account Number</label>
+        <input type="number">
+        <label>Routing Number</label>
+        <input type="number">
+
+        <div id="start_data">
+            <label>Start Date</label>
+            <input type="date">
+        </div>
+
+        <input id="submit" type="submit" value="Continue to Signature">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+
+/* -----------------------------------------navbar top panel */
+.top-nav-panel {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 11px;
+    background-color: #00438B;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.top-nav-panel p {
+    line-height: 45px;
+    margin-left: 20px
+}
+
+.top-nav-panel ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    line-height: 45px;
+}
+
+.top-nav-panel ul li {
+    margin: 0px 5px;
+
+}
+
+.top-nav-panel ul li a {
+    color: white;
+    padding: 0 10px;
+    border-right: 1px solid white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.top-nav-panel ul li a:hover {
+    color: rgb(169, 169, 169);
+
+}
+
+/* -----------------------------------------navbar */
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* ======================= search bar in nav */
+/* .form-control{
+    border-bottom: 2px solid white;
+    background-color: red;
+} */
+
+/* -----------------------------------------hero box Carousel */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-box {
+    width: 75%;
+    height: 95vh;
+    margin: auto;
+}
+
+/* ========================== Conten in image */
+.hero-img-content {
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    width: 500px;
+    color: white;
+}
+
+.hero-img-content h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.hero-img-content p {
+    width: 350px;
+    margin: 30px 0;
+}
+
+#mybtn {
+    background-color: #E60B09;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.hero-img-content #scndbtn:hover {
+    color: rgb(49, 49, 49);
+}
+
+/* ============================aside box*/
+.aside-imge-1 {
+    background-image: url("../assets/images/asideimg/yellow-sdie-img.png");
+    background-size: cover;  
+    object-fit: contain;
+}
+
+.aside-box {
+    margin: auto;
+    width: 23%;
+    height: 555px;
+
+}
+
+.aside-box h1 {
+    font-family: 'Bungee Outline', Sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aside-box p {
+    font-weight: 500;
+    text-align: center;
+}
+
+.aside-box a {
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+/* -----------------------------------------infinty horizontal scroll */
+.marquee-container {
+    background-color: #D90D0C;
+    width: 91%;
+    padding: 50px 20px;
+    margin: 30px auto;
+}
+
+.marquee-container span {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    line-height: 95px;
+
+}
+
+.marquee-container {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+
+    .marquee {
+        top: 0;
+        left: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        animation: marquee 30s linear infinite;
+    }
+
+    .marquee2 {
+        animation-delay: 15s;
+    }
+
+    /* b {
+      padding-left: 10px;
+    } */
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%
+    }
+}
+
+/* ------------------------------------------------logoss */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 91%;
+    padding: 30px 0;
+    margin: 35px auto;
+    text-align: center;
+    border-radius: 3px;
+    border: 3px solid rgba(56, 56, 56, 0.248);
+}
+
+.logo-container .card {
+    border: none;
+}
+
+.logo-container img {
+    width: 50%;
+    margin: auto;
+}
+
+/* --------------------------------------------------cards */
+.aside-imge-2 {
+    background-image: url("../assets/images/asideimg/blue-side-img.png");
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+.aside-imge-2 a {
+    color: white;
+}
+
+.card {
+    width: 180px;
+    margin: 5px 0;
+}
+
+#card-box {
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.card-hover {
+    transition: all 0.3s;
+}
+
+.card-hover:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 5px 8px 10px rgb(96, 96, 96);
+    z-index: 2;
+}
+
+/* ---------------------------------------------- second panel 2nd */
+.card-panel {
+    display: flex;
+    width: 91%;
+    height: 80px;
+    padding: 0 20px;
+    margin: 40px auto;
+}
+
+.card-panel p {
+    line-height: 80px;
+    color: white;
+    font-weight: 700;
+}
+
+.second-panel p:last-child {
+    margin-left: auto;
+}
+
+.card-panel a {
+    color: white;
+}
+
+.second-panel {
+    background: rgb(52, 7, 61);
+    background: linear-gradient(45deg, rgba(52, 7, 61, 1) 0%, rgba(101, 36, 69, 1) 55%, rgba(209, 99, 87, 1) 100%);
+}
+
+/* ---------------------------------------------- third panel 3rd */
+.third-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(20, 146, 113);
+    background: linear-gradient(0deg, rgba(20, 146, 113, 1) 45%, rgba(21, 157, 121, 1) 100%);
+
+}
+
+.third-panel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 160px;
+    background-color: #255946;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.third-panel p {
+    height: 63px;
+}
+
+.third-panel a:hover {
+    background-color: #E60B09;
+}
+
+
+/* --------------------------------------cards 333 */
+.aside-imge-3 {
+    background-image: url("../assets/images/asideimg/red-side-img.png");
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+/* ---------------------------------------------- fourth panel 4th */
+.fourth-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(15, 104, 169);
+    background: linear-gradient(30deg, rgba(15, 104, 169, 1) 0%, rgba(115, 228, 159, 1) 100%);
+
+}
+
+.fourth-panel button {
+    border-radius: none;
+    width: 150px;
+}
+
+.fourth-panel p {
+    height: 63px;
+}
+
+/* ---------------------------------------------- fifth panel 5th */
+.fifth-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(13, 65, 225);
+    background: linear-gradient(30deg, rgba(13, 65, 225, 1) 0%, rgba(8, 189, 247, 1) 100%);
+}
+
+.fifth-panel p {
+    height: 63px;
+}
+
+/* ---------------------------------------------- parent card */
+.parent-card {
+    width: 100%;
+}
+
+/* parent cards centent */
+#card-content-1 {
+    position: absolute;
+    left: 23px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+#card-content-1 h1 {
+    font-family: 'Bungee Outline', Sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#card-content-1 p a {
+
+    color: white;
+}
+
+/* chaild-card-body */
+.chaild-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* ---------------------------------------------- bottom  image side*/
+
+/* .bottom-image-side {
+    background-image: url("assets/images/heroimages/bottom-side-image.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  
+} */
+
+.bottom-image-side div {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 100px;
+}
+
+.bottom-image-side p span {
+    color: white;
+    font-size: 13px;
+    background-color: #3d3da0;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+}
+
+.bottom-image-side div h2 {
+    font-weight: 600;
+
+}
+
+.bottom-image-side div #snd-p {
+    width: 50%;
+    margin: auto;
+}
+
+.bottom-image-side div button {
+    margin-top: 20px;
+    padding: 8px 60px;
+}
+
+/* ---------------------------------------------- About e-com*/
+
+.e-com {
+    padding-top: 60px;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    top: 469px;
+    text-align: center;
+}
+
+.e-com p {
+    margin: auto;
+    width: 500px;
+
+}
+
+/* ---------------------------------------------- footer*/
+footer {
+    position: relative;
+    top: 467px;
+}
+
+#gradiant-color {
+    color: white;
+    background: rgb(0, 25, 73);
+    background: linear-gradient(90deg, rgba(0, 25, 73, 1) 0%, rgba(2, 88, 181, 1) 100%);
+
+}

@@ -1,0 +1,315 @@
+/* CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bree Serif", serif;
+  scroll-behavior: smooth;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+/* Navigstion bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+  position: sticky;
+  top: 0px;
+}
+/* navigation bar : logo */
+#logo {
+  margin: 5px 15px;
+}
+#logo img {
+  height: 40px;
+}
+
+/* list item */
+#navbar ul {
+  display: flex;
+  /* padding: 15px; */
+  margin: auto;
+}
+#navbar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.5;
+  /* margin-bottom: 1em; */
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  /* display: block; */
+  text-decoration: none;
+  color: white;
+  padding: 3px 20px;
+  border-radius: 15px;
+  margin: 0px 15px;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#navbar ul li a:active {
+  color: black;
+  background-color: rgb(190, 190, 190);
+}
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 200px;
+  justify-content: center;
+  align-items: center;
+  /* height: 569px; */
+}
+#home {
+  background-image: url("img/home.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* z-index: -2; */
+  /* margin-top: -0.5em; */
+}
+#home h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 3px 4px 6px rgb(57, 57, 57);
+}
+#home p {
+  color: rgb(37, 37, 37);
+  text-align: center;
+  font-size: 15px;
+}
+#home #text {
+  color: rgb(37, 37, 37);
+  text-align: center;
+  font-size: 20px;
+  /* margin: 8px; */
+  height: 38px;
+}
+.btn {
+  padding: 6px 30px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+
+  background-color: rgb(250, 45, 45);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  background-color: brown;
+}
+.btn:active {
+  background-color: rgb(250, 45, 45);
+}
+
+/* services section */
+.services-container {
+  background-color: rgb(228 228 228);
+  height: 125vh;
+  /* z-index: -2; */
+}
+#services {
+  margin: 34px;
+  display: flex;
+  border: none;
+}
+.h-primary-center {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.services-container .h-primary-center {
+  padding: 10px;
+}
+.services-container .center {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(40, 40, 40);
+}
+#services .box {
+  box-shadow: rgb(60, 60, 60) 0px -35px 60px 0px inset;
+  background-color: #dedede;
+  padding: 11px;
+  margin: 7px;
+  height: 400px;
+  border-radius: 28px;
+}
+
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 190px;
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+/*about aection*/
+.about-me {
+  /* background-color: #fff7dc; */
+  background-image: url("img/about.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  color: white;
+  height: 108vh;
+}
+.about h2 {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  top: 150px;
+}
+.about h6 {
+  display: block;
+  margin-left: 185px;
+  font-size: 25px;
+}
+.about-me .about #welcome {
+  padding-top: 28px;
+  font-size: 2rem;
+}
+.about #about-p {
+  display: flex;
+  padding: 20px;
+  margin: 150px 170px;
+  text-shadow: 0px 0px 30px black;
+}
+.about-me h6 {
+  padding-bottom: 50px;
+}
+
+/* Contact Us */
+#contact {
+  background-color: rgb(45, 45, 45);
+  height: 100vh;
+}
+#contact .h-primary {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#contact-box {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+/* #contact .h-primary {
+  padding-top: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+}
+/* .form-group label {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+.form-group #name {
+  border-radius: 2px;
+  border: none;
+  padding: 7px 25px;
+  text-align: center;
+}
+.form-group textarea {
+  text-align: center;
+}
+.form-group button {
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: rgb(250, 45, 45);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 80px;
+}
+.form-group button:hover {
+  background-color: brown;
+}
+.form-group button:active {
+  background-color: rgb(250, 45, 45);
+}
+
+/* client section */
+#client-section {
+  padding: 1px;
+  background-color: rgb(45, 45, 45);
+}
+#client-section .h-primary-center {
+  background-color: rgb(62 62 62);
+  margin: 20px 358px;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  margin: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px #5c5c5c;
+}
+.client-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+.client-item img:hover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+.client-item img:active {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+/* utility classes */
+.h-primary {
+  font-size: 3rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-size: 2rem;
+  padding: 12px;
+}
+.copyright {
+  background-color: rgb(45, 45, 45);
+  color: #cdcdcd;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 15px;
+}

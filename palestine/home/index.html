@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+        <div><img src="/image/pngwing.com.png"></div>
+        <ul>
+            <a href="/home/index.html" class="active">Home</a>
+            <a href="/beauty/beauty.html">Beauty</a>
+            <a href="/al-aqsa/al-aqsa.html">al-aqsa</a>
+            <a href="/contact/contact.html" id="btn">Leave your Comment here</a>
+        </ul>
+    </nav>
+    <!-- header part started -->
+    <header>
+        <section id="home-first-section">
+            <div class="row">
+                <div class="col">
+                    <h2>Welcome to the Home of</h2>
+                    <h1>PALESTINE</h1>
+                    <P >Palestine, a land of captivating contrasts, is a tapestry of ancient history and
+                        breathtaking landscapes. Nestled in the heart of the Middle East, it boasts sun-kissed shores
+                        along the Mediterranean, rolling hills, and storied cities like Bethlehem and Jericho. The land
+                        resonates with echoes of spirituality, housing holy sites for Christianity and Islam, most
+                        notably the revered Al-Aqsa Mosque. Amidst its turmoil, Palestine's resilient spirit prevails,
+                        celebrating its rich cultural heritage through art, music, and cuisine. With its vibrant markets
+                        and warm hospitality, this enchanted land, despite its struggles, remains a symbol of unwavering
+                        hope and enduring beauty.</P>
+                    <div id="homesecondparadiv" style="display: none;">
+                        <p >Palestine, a land of captivating contrasts, is a tapestry of ancient history and breathtaking
+                            landscapes. Nestled in the heart of the Middle East, it boasts sun-kissed shores along the
+                            Mediterranean, rolling hills, and storied cities like Bethlehem, Jericho, Hebron, and Nablus.
+                            Each city carries its own unique history and cultural significance, contributing to the rich
+                            mosaic of the region.
+    
+                            The land resonates with echoes of spirituality, housing holy sites for Christianity and Islam,
+                            most notably the revered Al-Aqsa Mosque in Jerusalem. This sacred city serves as a pilgrimage
+                            destination for millions of faithful from around the world, drawing them to the Western Wall,
+                            the Church of the Holy Sepulchre, and the Dome of the Rock, all within close proximity.
+    
+                            Amidst its turmoil, Palestine's resilient spirit prevails, celebrating its rich cultural
+                            heritage through art, music, and cuisine. Palestinian art reflects the struggle for identity and
+                            resistance, often portraying the resilience of the Palestinian people. The traditional sounds of
+                            oud music and the rhythmic dabke dance are integral to the cultural tapestry.
+    
+                            Palestinian cuisine is a fusion of flavors, where dishes like falafel, shawarma, and hummus have
+                            found their way onto tables worldwide. Local markets, known as 'souks,' offer a sensory journey
+                            filled with spices, textiles, and handicrafts. The vibrant markets and warm hospitality of the
+                            Palestinian people leave an indelible mark on visitors.
+    
+                            Despite its struggles, Palestine remains a symbol of unwavering hope and enduring beauty, with a
+                            people who continue to preserve their heritage, honor their history, and work towards a peaceful
+                            and prosperous future. This storied land embodies a narrative of resilience, cultural richness,
+                            and the coexistence of diverse communities.
+                        </p>
+                    </div>
+                    <div style="display: inline-block;" id="secondbtn">
+                        <p style="display: inline-block;" >Read for</p><a id="morebtn" onclick="toggleParagraph()" href="#home-second-section">More</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://www.thoughtco.com/thmb/FrDf0IuayvfsWERvf4uJVxhReI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-174980034-5aca3b5f3037130037b8d6f5.jpg"
+                        width="100%">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header part is end -->
+
+    <!--footer part started -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>Contact Information</h3>
+                <p>Email : anasbaloch123@gmail.com</p>
+                <p>Phone: 03344373845</p>
+                <p>&copy; 2023 Anas_baloch. All rights reserved.</p>
+            </div>
+            <div class="col">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                    <li><a href="/sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part ened -->
+    <script>
+        function toggleParagraph() {
+            var paragraphDiv = document.getElementById("homesecondparadiv");
+            var morer = document.getElementById("morebtn").innerHTML="Less"
+            if (paragraphDiv.style.display === "none") {
+                paragraphDiv.style.display = "block";
+            } else {
+                paragraphDiv.style.display = "none";
+                paragraphDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  
+  <title>Ecommerce</title>
+  <!-------- Tab logo------->
+  <link rel="Icon" href="assets/images/logo/tab-logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <style>
+    .bottom-image-side {
+      background-image: url("assets/images/heroimages/bottom-side-image.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      top: 470px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- -----------------------------------------navbar top panel -->
+    <div class="top-nav-panel">
+      <p>FREE SHIPPING ON ALL ORDERS OVER $75</p>
+      <ul>
+        <li><a href="#">FIND STORE</a></li>
+        <li><a href="#">JOIN US</a></li>
+        <li><a href="#">HELP</a></li>
+        <li><a href="#" style="border-right: none;">SIGN IN</a></li>
+      </ul>
+    </div>
+
+    <!-------------------------------------------navbar -->
+    <nav class="navbar bg-body-tertiary ">
+      <div class="container-fluid">
+        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="#">E - COM</a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ecommerce</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!----------------------------------------------hero section -->
+    <div class="container">
+      <div class="hero-box">
+        
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/heroimages/hero-1.png" class="d-block w-100" alt="...">
+              <div class="hero-img-content">
+                <h2>MEET THE LINE OF MILLENNIUM</h2>
+                <P>Consequatur iusto exercitationem rem reprehenderit officia, explicabo perferendis ex, voluptatum
+                  suscipit modi eius labore deleniti nostrum atque.</P>
+                <button type="button" class="btn btn-danger " id="mybtn">Check Collection</button>
+                <button type="button" class="btn btn-danger " id="mybtn">Shop Now</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/heroimages/hero-2.png" class="d-block w-100" alt="...">
+              <div class="hero-img-content">
+                <h2>NEW MODERN <br> COLLECTION</h2>
+                <P>Consequatur iusto exercitationem rem reprehenderit officia, explicabo perferendis ex, voluptatum
+                  suscipit modi eius labore deleniti nostrum atque.</P>
+                <button type="button" class="btn btn-primary">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!----------------------------------------------aside of hero -->
+      <div class="aside-box aside-imge-1">
+        <h1>FLASH SALE</h1>
+        <P>10 OCT - 1 DEC</P>
+        <p><a href="#">See more products</a></p>
+      </div>
+    </div>
+
+    <!-----------------------------------------infinty horizontal scroll -->
+    <div class="position-relative marquee-container d-none d-sm-block">
+      <div class="marquee d-flex justify-content-around">
+        <span> FOR FIRST ORDER : MYFIRSTO </span>
+        <span> FOR FIRST ORDER : MYFIRSTO </span>
+        <span> FOR FIRST ORDER : MYFIRSTO </span>
+        <span> FOR FIRST ORDER : MYFIRSTO </span>
+      </div>
+      <div class="marquee marquee2 d-flex justify-content-around">
+        <span> FOR FIRST ORDER : MYFIRSTORDER </span>
+        <span> FOR FIRST ORDER : MYFIRSTORDER </span>
+        <span> FOR FIRST ORDER : MYFIRSTORDER </span>
+        <span> FOR FIRST ORDER : MYFIRSTORDER </span>
+        <span> FOR FIRST ORDER : MYFIRSTORDER </span>
+      </div>
+    </div>
+
+    <!------------------------------------------------logoss  -->
+    <div class="logo-container">
+      <!-- -----1st card -->
+      <div class="card" style="width: 14rem;">
+        <img src="assets/images/logo/logo-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>Continuous Campaigns</h4>
+          <p class="card-text">Some quick example text.</p>
+        </div>
+      </div>
+      <!-- -----2nd card -->
+      <div class="card" style="width: 14rem;">
+        <img src="assets/images/logo/logo-3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>Completely free shipping</h4>
+          <p class="card-text">Some quick example text.</p>
+        </div>
+      </div>
+      <!-- -----3rd card -->
+      <div class="card" style="width: 14rem;">
+        <img src="assets/images/logo/logo-4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>All Payment Methods</h4>
+          <p class="card-text">Some quick example text.</p>
+        </div>
+      </div>
+      <!-- -----4th card -->
+      <div class="card" style="width: 14rem;">
+        <img src="assets/images/logo/logo-5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>Successful Customer Service</h4>
+          <p class="card-text">Some quick example text.</p>
+        </div>
+      </div>
+      <!-- -----5th card -->
+      <div class="card" style="width: 14rem;">
+        <img src="assets/images/logo/logo-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>Amazing Value Every Day</h4>
+          <p class="card-text">Some quick example text.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------cards -->
+    <div class="container">
+
+      <div class="aside-box aside-imge-2">
+        <h1>NEW PRODUCTS</h1>
+        <P>10 OCT - 1 DEC</P>
+        <p><a href="#">See more products</a></p>
+      </div>
+
+      <div class="hero-box " id="card-box">
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text">$59.00 – $97.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------->
+      </div>
+    </div>
+
+    <!---------------------------------------------- second panel 2nd -->
+    <div class="card-panel second-panel">
+      <p>Super discount for your first purchase</p>
+      <p>Use discount code in <a href="#">checkout</a> page.</p>
+    </div>
+    <!---------------------------------------------- third panel 3rd -->
+    <div class="card-panel  third-panel">
+      <p>New user surprise campaign!</p>
+      <a href="#">Check Products</a>
+    </div>
+
+    <!--------------------------------------------------cards -->
+    <div class="container">
+      <div class="aside-box aside-imge-3">
+        <h1>NEW PRODUCTS</h1>
+        <P>10 OCT - 1 DEC</P>
+        <p><a href="#">See more products</a></p>
+      </div>
+
+      <!-------->
+      <div class="hero-box " id="card-box">
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text">$59.00 – $97.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------- fourth panel 4th -->
+    <div class="card-panel fourth-panel">
+      <p>Super discount for your first purchase</p>
+      <button type="button" class="btn btn-primary">FIRST 250</button>
+      <p>Use discount code in <a href="#">checkout</a> page.</p>
+    </div>
+    <!---------------------------------------------- fifth panel 5th -->
+    <div class="card-panel  fifth-panel">
+      <p>New user surprise campaign!</p>
+      <button type="button" class="btn btn-primary">check products</button>
+    </div>
+
+
+
+    <!--------------------------------------------------cards -->
+    <div class="container">
+      <!--      card 1 -->
+      <div class="aside-box aside-imge-4">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text"><s>$230.00 </s>$220.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card card-hover">
+              <img src="assets/images/cardimg/card-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Nike Air Max.</p>
+                <p class="card-text">$59.00 – $97.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!------------ parent card  -->
+      <div class="hero-box " id="card-box">
+
+        <div class="card mb-3 parent-card">
+          <img src="assets/images/heroimages/hero-3.png" class="card-img-top" alt="...">
+          <div id="card-content-1">
+            <h1>NEW PRODUCTS</h1>
+            <p><a href="#">See more products</a></p>
+          </div>
+
+          <div class="card-body chaild-card-body">
+            <!--------- chaild card -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text">$59.00 – $97.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+              <div class="col">
+                <div class="card card-hover">
+                  <img src="assets/images/cardimg/card-8.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Nike Air Max.</p>
+                    <p class="card-text"><s>$230.00 </s>$220.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--------------------------------------------------footer side image -->
+    <div class="bottom-image-side text-center">
+      <div>
+        <p><span class="">NEW SEASON</span></p>
+        <h2>Back to the past : Shoes</h2>
+        <p id="snd-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam, laborum velit et excepturi
+          deserunt. Alias repudiandae error, pariatur voluptates tenetur doloribus esse tempore necessitatibus
+          aspernatur nulla, incidunt velit eaque.</p>
+        <button type="button" class="btn btn-danger">Danger</button>
+      </div>
+    </div>
+    <div class="e-com">
+      <h2 class="display-4">#E-COM</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptatem numquam fugiat maiores quo. Iure,
+        earum dolores rem labore dolorem totam repellat debitis error! Veniam?</p>
+    </div>
+  </main>
+
+
+  <!--------------------------------------------------footer-->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <div id="gradiant-color">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>E-com
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima maxime tenetur, eum
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Nike</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Gucci</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">addidas</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Puma</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">E-com.com</a>
+      </div>
+      <!-- Copyright -->
+    </div>
+  </footer>
+  <!-- Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Outline&family=Josefin+Sans&family=Poppins:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* ============================================= HEADER */
+
+/* ----------------------------------- Navigation Bar */
+.nabar {
+    background-color: #2A085C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nabar img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: #8e68ff;
+    box-shadow: 0px 0px 10px 0px #8e68ff;
+}
+
+.nabar ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nabar ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+}
+
+.nabar ul li a.active,
+.nabar ul li a:hover {
+    border-bottom: #8e68ff 3px solid;
+}
+
+.btn {
+    margin-right: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: #8e68ff 3px solid;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: white;
+    border: #8e68ff 3px solid;
+    background-color: #8e68ff;
+    box-shadow: 0px 0px 10px 0px #8e68ff;
+}
+
+
+/* ============================================= MAIN */
+
+/* ----------------------------------- HERO */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #16072D;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ----------------------------------- HERO > left */
+
+.left-content {
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid white; */
+}
+
+.left-content h2 {
+    text-shadow: 0px 0px 10px #8e68ff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 25px 0;
+}
+
+.left-content p {
+    text-align:left;
+    font-size: 1.2rem;
+}
+
+/* ----------------------------------- HERO > right */
+.right-content {
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid white; */
+}
+
+.right-content img {
+    width: 100%;
+}
+
+@media  (max-width:920px){
+    .left-content {
+        width: 50%;
+        
+        flex: 1;
+    }
+    .left-content h2 {
+        font-size: 3rem;
+    }
+    
+    .left-content p {
+        font-size: 1.1rem;
+    }
+    .right-content {
+        width: 50%;
+        flex: 1;
+    }
+}
+/* ============================================= FIRST section */
+.fisrtSection{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #16072D;
+    width: 100%;
+    height: 100vh;
+    border-top:7px solid #2A085C;
+}
